@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>travel1</title>
+    <style>
+        html, body {
+            margin: 0%;
+            height: 100%;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        main {
+            height: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .menu{
+            position:fixed;
+            font-size: 30px;
+            width: 100%;
+        }
+        .menu ul{
+            justify-content: space-around;
+            display: flex;
+            margin-top: 40px;
+        }
+        .menu ul li {
+        display: flex;
+        }
+        .menu ul li :hover {
+            text-decoration: underline;
+        }
+        section {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center;
+        }
+        .section-main{
+            background-image: url(assets/images/MainSection.jpg);   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            max-width: 750px;
+       }   
+       header .Button {
+        font-size: 24px;
+        padding: 10px 18px;
+        background: green;
+        border-radius: 20px;
+        height: 30px;
+        width: 150px;
+       }
+       header .Button:hover {
+        background: lightgreen;
+        text-decoration: underline;
+       }
+        .section-main .first {
+            margin: 0%;
+            font-size: 72px;
+            color: white;
+        }
+        .section-main .second {
+            font-size: 28px;
+        }
+        .section-gallery{
+            background-image: url(assets/images/GallerySection.jpg);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .section-gallery img {
+            border-radius:15px;
+        }
+        h2 {
+            margin: 0%;
+            font-size:40px;
+            text-align: center;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .section-gallery .card{
+            box-sizing: border-box;
+            width: 320px;
+            padding: 24px;
+            background: rgba(88,88,88,0.5);
+        }
+        .section-gallery .card .card-content {
+            display: flex;
+            flex-flow: column;
+            gap: 15px;
+        }
+        .section-gallery .card-title{
+            font-size: 30px;
+        }
+        .section-gallery .read-more{
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(88,88,88,0.45);
+            align-self: self-end;
+        }
+        .section-gallery .read-more:hover{
+            text-decoration: underline;
+            background: green;
+        }
+        .all {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-flow: wrap;
+            gap: 30px;
+        }
+
+        .section-about{
+            background-image: url(assets/images/AboutSection.jpg);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        h3 {
+            margin: 0%;
+            font-size: 30px;
+        }
+        .container {
+            width: 750px;
+            gap: 30px;
+            display: flex;
+            flex-flow: column;
+        }
+        .text {
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#Home">Home</a>
+                </li>
+                <li>
+                    <a href="#Gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="#About-us">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="section-main" id="Home">
+            <header>
+              <h1 class="first">Travel Time</h1>
+              <div class="second">Let's travel with us we will start a new adventure together with full
+                of happiness and laughs</div>
+                <a href="#" class="Button">Join</a>
+            </header>
+        </section>
+        <section class="section-gallery" id="Gallery">
+<div class="all">          
+            <h2 class="title">Where do you want to go</h2>
+    <div class="cards">
+         <div class="card">    
+            <img src="assets/images/gallery/m1.png" alt="Mountain">
+           <div class="card-content">  
+             <div class="card-title">Mountain</div>
+             <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+            Class aptent taciti sociosqu ad litora .</div>
+            <a href="#" class="read-more">Read More</a>
+           </div>
+         </div> 
+         <div class="card">    
+            <img src="assets/images/gallery/m2.png" alt="Mountain">
+           <div class="card-content">  
+             <div class="card-title">Mountain</div>
+             <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+            Class aptent taciti sociosqu ad litora .</div>
+            <a href="#" class="read-more">Read More</a>
+           </div>
+         </div>
+         <div class="card">    
+            <img src="assets/images/gallery/m3.png" alt="Mountain">
+           <div class="card-content">  
+             <div class="card-title">Mountain</div>
+             <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+            Class aptent taciti sociosqu ad litora .</div>
+            <a href="#" class="read-more">Read More</a>
+           </div>
+         </div>
+         <div class="card">    
+            <img src="assets/images/gallery/m4.png" alt="Mountain">
+           <div class="card-content">  
+             <div class="card-title">Mountain</div>
+             <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+            Class aptent taciti sociosqu ad litora .</div>
+            <a href="#" class="read-more">Read More</a>
+           </div>
+         </div>
+    </div>  
+</div>  
+        </section>
+        <section class="section-about" id="About-us">
+        <div class="container">
+            <h3>About Us</h3>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
+                ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per 
+                inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class 
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus 
+                urna at turpis condimentum lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+                vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora 
+                torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+            </div>
+        </div>    
+        </section>
+    </main>
+    <script>
+        const name = "Ahmet";
+        var surname = "Yilmaz";
+        var fullname = name + " " + surname ;
+        var age = 18 ;
+        var teenager = age !== "18" ;
+        var thisYear = 2023 ;
+        //  name = "Mehmet";
+        console.log(age>17 && age < 20)
+        console.log(teenager);
+        console.log("HELLO WORLD!");
+        console.log(++ age  );
+        console.log (name,surname);
+        console.log (fullname,age);
+        console.log ("Birth date:",thisYear - age);
+    </script>
+</body>
+</html>
